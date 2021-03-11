@@ -1,9 +1,24 @@
-let log = function(message){
-    console.log(message);
+// You don't want to do it like this because there are too many perameters. 
+// let drawPoint = (x, y, a, b, c, d, e) => {
+//     // ...
+// }
+
+//this is how to incoporate interfaces in Typescript, always use uppercase when using interfaces. 
+interface Point {
+    x: number,
+    y: number
 }
 
-// The arrow function works the same way as a Lamda function in C#
-let doLog = (message) => console.log(message);
+let drawPoint = (point: Point) => {
+    // ...
+}
 
-// Works the same way as the method above^
-// let doLog = () => console.log();
+//Inline annotation works for simple cases.
+// let drawPoint = (point: { x: number, y: number}) => {
+//      // ...
+// }
+
+drawPoint({
+    x: 1,
+    y: 2
+})
