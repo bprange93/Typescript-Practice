@@ -1,8 +1,8 @@
 
 //Changed to class to apply Cohesion Principle here. X and Y fields, draw is a Function
 class Point {
-    x: number;
-    y: number;
+    private x: number;
+    private y: number;
 
     constructor(x?: number, y?: number){
         this.x = x;
@@ -15,7 +15,7 @@ class Point {
 
 }
 //object instance of a class.
-let point = new Point();
+let point = new Point(1, 2);
 point.draw();
 
 //These were taken out for better coding practices, makes the code cleaner and easier to read. They were no longer needed since methods
