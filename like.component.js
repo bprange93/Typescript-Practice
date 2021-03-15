@@ -1,5 +1,6 @@
+"allowJs";
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.LikeButton = void 0;
 var LikeButton = /** @class */ (function () {
     function LikeButton(_likeCount, _isSelected) {
