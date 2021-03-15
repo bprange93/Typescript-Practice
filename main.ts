@@ -1,14 +1,11 @@
 
 //Changed to class to apply Cohesion Principle here. X and Y fields, draw is a Function
 class Point {
-    private x: number;
-    private y: number;
 
-    constructor(x?: number, y?: number){
-        this.x = x;
-        this.y = y;
+    constructor(private x?: number, private y?: number){
 
-    }    //In class function is referred to as a method rather than a function. 
+    }    
+    //In class function is referred to as a method rather than a function. 
     draw(){
         console.log('x: ' + this.x + ', Y: ' + this.y);
     }
