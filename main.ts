@@ -1,6 +1,8 @@
-//need ./ in order to import. 
-import { Point } from './point'
+"allowJs";
+import {LikeButton } from './like.component'
 
-//object instance of a class.
-let point = new Point(1, 2);
-point.draw();
+let component = new LikeButton(10, true);
+
+component.onClick();
+console.log(`likeCount: ${component.likeCount}, isSelected: ${component.isSelected}`);
+
