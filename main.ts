@@ -3,19 +3,19 @@
 class Point {
     x: number;
     y: number;
-    //In class function is referred to as a method rather than a function. 
+
+    constructor(x?: number, y?: number){
+        this.x = x;
+        this.y = y;
+
+    }    //In class function is referred to as a method rather than a function. 
     draw(){
         console.log('x: ' + this.x + ', Y: ' + this.y);
     }
 
-    getDistance(another: Point){
-        //...
-    }
 }
 //object instance of a class.
 let point = new Point();
-point.x = 1;
-point.y = 2;
 point.draw();
 
 //These were taken out for better coding practices, makes the code cleaner and easier to read. They were no longer needed since methods
